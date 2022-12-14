@@ -84,3 +84,8 @@ body {
     grid-column: span 2;
     aspect-ratio: auto;
 }
+
+sup {
+    font-size: 0.6em;
+    vertical-align: 75%;
+}
