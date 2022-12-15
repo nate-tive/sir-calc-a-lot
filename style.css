@@ -2,7 +2,12 @@
     box-sizing: border-box;
 }
 
-html, body {
+*:focus {
+    outline: none;
+}
+
+html,
+body {
     height: 100%;
 }
 
@@ -23,10 +28,23 @@ body {
     background-color: rgb(72, 72, 72);
 }
 
-.btn, #screen {
+.btn:hover {
+    background-color: rgb(112, 112, 112);
+}
+
+.btn,
+#screen {
     border-radius: 15px;
     border: none;
     font-size: 2em;
+}
+
+.btn-operator {
+    background-color: chocolate;
+}
+
+.btn-operator:hover {
+    background-color: rgb(210, 136, 82);
 }
 
 #wrapper {
@@ -49,23 +67,15 @@ body {
 }
 
 #screen {
-    grid-column: span 4;
     cursor: default;
     height: 75px;
     width: 100%;
     text-align: right;
-    padding: 25px 25px 5px 5px;
+    padding: 25px 20px 5px 20px;
 }
 
 #screen:focus {
     outline: none;
-}
-
-#btn-clear {
-    cursor: pointer;
-    background-color: rgb(212, 11, 11);
-    color: white;
-    text-shadow: 3px;
 }
 
 #grid {
@@ -75,9 +85,25 @@ body {
     margin-top: 8px;
 }
 
+#btn-clear {
+    cursor: pointer;
+    background-color: rgb(212, 11, 11);
+    color: white;
+    text-shadow: 3px;
+}
+
+#btn-clear:hover {
+    background-color: rgb(222, 59, 59);
+}
+
 #btn-equal {
     grid-row: span 2;
     aspect-ratio: auto;
+    background-color: rgb(33, 148, 33);
+}
+
+#btn-equal:hover {
+    background-color: rgb(77, 146, 77);
 }
 
 #btn-0 {
